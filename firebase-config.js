@@ -1,26 +1,11 @@
-<!-- login.html -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login and Signup</title>
-    <!-- Add your CSS file here -->
-</head>
-<body>
-    <h1>Login or Sign Up</h1>
-    <form id="loginForm">
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="password" placeholder="Password">
-        <button type="button" onclick="login()">Login</button>
-    </form>
-    <form id="signupForm">
-        <input type="email" id="signupEmail" placeholder="Email">
-        <input type="password" id="signupPassword" placeholder="Password">
-        <button type="button" onclick="signup()">Sign Up</button>
-    </form>
+// firebase-config.js
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
 
-    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js"></script>
-    <script src="js/firebase-config.js"></script>
-    <script src="js/login.js"></script>
-</body>
-</html>
+firebase.initializeApp(firebaseConfig);
